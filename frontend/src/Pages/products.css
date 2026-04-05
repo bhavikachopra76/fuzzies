@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+/* Container for the entire products page */
+.products-page {
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.product-aside {
+    width: 25%;
+    background-color: #613e34; /* Change this if you want a darker theme */
+    padding: 10% 5%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.aside-category {
+    padding: 18px 10px;
+    border-top: 0.5px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+.brand-border {
+    border-bottom: 0.5px solid grey;
+}
+
+.hidden-radio-container label{
+    font-family: Courier Prime;
+    font-size: 2.2vh;
+}
+
+.aside-category p {
+    color: #fff;
+    font-family: Courier Prime;
+    font-size: 2.2vh;
+
+}
+
+.aside-category-hidden {
+    padding-bottom: 15px;
+    display: none;
+}
+
+.product-show {
+    display: block;
+}
+
+.hidden-radio-container {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.label {
+    display: flex;
+    color: #ddd;
+}
+
+/* Container for the product grid */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+    width: 75%;
+    padding: 50px 0px 130px 0;
+}
+
+/* Individual product card */
+.product-card {
+    background-color: #CAC0B5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Product image */
+.product-card img {
+    width: 100%;
+    height: 295px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 90%;
+    height: 220px;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    font-family: Quattrocento;
+}
+
+.product-info p {
+    font-size: 15px;
+    font-family: Courier Prime; /* Corrected the font name */
+}
+
+.paragraphs-product {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-cart-button {
+    font-family: "League Spartan", system-ui;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 10px;
+    background-color: #21211f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.reset-button{
+    text-align: center;
+    padding: 10px;
+    background-color: #21211f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    font-family: Courier Prime;
+}
+
+.product-cart-button:focus {
+    outline: 2px solid #f39c12; /* Example focus style */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.product-cart-button:hover {
+    background-color: #f39c12; /* Change button color on hover */
+}
+
+.bone-icon {
+    margin-left: 5px;
+}
+.feedback-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .feedback-content {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .feedback-textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* .feedback-content button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  
+  .feedback-content button:hover {
+    background-color: #0056b3;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ulmodel{
+    padding: 0.35vh 3vh;
+    font-family: Courier Prime;
+  }
+
+  .emailkiclass{
+    font-family: Courier Prime;
+  }
+  .limodel{
+    padding: 0.25vh;
+    font-family: Courier Prime;
+  }
+  .modal-content {
+    background: white;
+    padding: 44px;
+    border-radius: 8px;
+    width: 391px;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: wheat;
+  }
+  
+  .modal-content h3 { 
+    text-align: center;
+    font-size: 2.7vh;
+    font-weight: 800;
+    padding: 1vh 0vh;
+    font-family: Quattrocento;
+  }
+  
+  .modal-content textarea {
+    width: 100%;
+    margin: 25px 0;
+    /* border: none; */
+    padding: 3vh;
+    border-radius: 2vh;
+    /* border: none; */
+    outline: none;
+    resize: none;
+}
+
+ .feedbacksubmit{
+    padding: 2vh;
+    border-radius: 3vh;
+    border: none;
+    background-color: #623a1d;
+    color: white;
+    font-size: 1.9vh;
+    font-weight: 500;
+    font-family: Courier Prime;
+
+ }
+
+ .closebutton{
+    padding: 2vh 4.2vh;
+    border-radius: 3vh;
+    border: none;
+    background-color: #623a1d;
+    color: white;
+    font-size: 2vh;
+    font-weight: 500;
+    margin-left: 6vh;
+    font-family: Courier Prime;
+ }
+
+
+  /* Feedback button */
+.feedback-button {
+    font-family: "League Spartan", system-ui;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding: 10px;
+    background-color: #21211f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.feedback-button:focus {
+    outline: 2px solid #f39c12; 
+}
+
+.feedback-button:hover {
+    background-color: #f39c12; 
+}
+
+
+

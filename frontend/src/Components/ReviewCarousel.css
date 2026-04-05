@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80vw;
+    overflow: hidden;
+    padding: 5%;
+    margin: 20px auto;
+    max-width: 1490px;
+    height: 71vh;
+    background-color: white;
+    margin-top: 40px;
+}
+
+/* Review Section */
+.review-section {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    padding-right: 6%;
+    width: 97%;
+    justify-content: space-around;
+}
+
+/* Review Cards */
+.review-card {
+    flex: 0 0 32%;
+    box-sizing: border-box;
+    margin-right: 40px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #CAC0B5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    justify-content: center;
+}
+
+.review-card.active {
+    transform: scale(1.45);
+    border-radius: 10%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    position: relative;
+}
+
+.review-card.active::after {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 128px;
+    height: 100px;
+    background-image: url('image.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.review-card:last-child {
+    margin-right: 0;
+}
+
+/* Review Text */
+.review-name {
+    font-size: 25px;
+    font-family: Quattrocento;
+    font-weight: 700;
+    color: #4e372a;
+}
+
+.paragraph-review {
+    font-family: 'Courier Prime', sans-serif;
+    font-size: 14px;
+}
+
+/* Carousel Buttons */
+.carousel-button {
+    border: none;
+    color: white;
+    padding: 9px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: #21211f;
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 7px;
+}
+@media (max-width: 768px) {
+    .review-card {
+        flex: 0 0 45%; /* Adjust card width on medium screens */
+        margin-right: 20px; /* Reduce margin for smaller screens */
+        margin-left: 10px; /* Reduce margin for smaller screens */
+        height: auto; /* Allow height to adjust */
+    }
+    
+    .carousel-container {
+        height: 60vh; /* Reduce height on medium screens */
+    }
+
+    .carousel-button {
+        padding: 7px 12px; /* Adjust button size */
+        font-size: 14px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .review-card {
+        flex: 0 0 90%; /* Full width for cards on small screens */
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+        height: auto; /* Allow height to adjust */
+    }
+    
+    .carousel-container {
+        height: 50vh; /* Further reduce height on small screens */
+    }
+
+    .review-name {
+        font-size: 20px; /* Smaller font size for names */
+    }
+
+    .paragraph-review {
+        font-size: 12px; /* Smaller font size for reviews */
+    }
+
+    .carousel-button {
+        padding: 5px 10px; /* Further adjust button size */
+        font-size: 12px; /* Further adjust button font size */
+    }
+}

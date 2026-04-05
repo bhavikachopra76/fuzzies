@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+.billing-container {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  min-height: 70.3vh;
+  background-color: #CAC0B5;
+}
+
+.billing-container h1{
+  font-family: Quattrocento;
+}
+
+.billing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.billing-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 10px;
+}
+
+.noBill{
+  text-align: center;
+}
+
+.billing-card h3 {
+  margin-top: 0;
+  font-family: Quattrocento;
+  font-size: 3.5vh;
+}
+
+.billing-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.billing-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.billing-item strong {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: Quattrocento;
+}
+
+.billing-item p{
+  font-family: Courier Prime;
+}
+
+.billing-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-family: Courier Prime;
+}
+
+.billing-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .billing-card {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .billing-item {
+      font-size: 14px;
+  }
+
+  .billing-item a {
+      font-size: 14px;
+  }
+}

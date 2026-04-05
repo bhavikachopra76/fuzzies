@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+/* .main-color{
+    height:20px;
+    background-color: #CAC0B5;
+    z-index: 5;
+    position: relative;
+} */
+
+.checkout{
+  background-color: #CAC0B5;
+  z-index: -5;
+}
+
+.cartPage-container{
+    min-height: 70.3vh;
+    background-color: #CAC0B5;
+    /* display: flex; */
+    width: 100%;
+}
+
+.cart-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+width: 70vw;
+}
+
+.shopping-cart{
+    font-family: Quattrocento;
+    width: 75%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.cart-div-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cart-items{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.price-breakdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 0;
+  margin-top: -23vh;
+  background-color: #7C5F4E;
+  row-gap: 20px;
+  color: white;
+}
+
+.checkout-btn{
+    height: 40px;
+    /* width: 25%; */
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #efab90;
+}
+
+.empty-cart{
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: inherit;
+  }
+  
+  .empty-cart img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 13%;
+    fill: #c7c7c7;
+    color: rgb(102, 102, 102);
+  }
+
+  .button-cart-click{
+    padding: 13px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #56453a;
+  color: white;
+  font-family: Courier prime;
+  font-size: 16px;
+  }
+
+  .cart-items-container{
+    display: flex;
+  }
+
+
+  .aside-cart{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70.3vh;
+    position: sticky;
+    top: 29.7vh;
+  }
+
+  .buy-now-button{
+    padding: 10.2px 16px;
+    background-color: #996a58;
+    font-family: Courier Prime;
+    outline: none;
+    color: white;
+    border: none;
+  }
+
+  .total-amount h3{
+    font-family: Quattrocento;
+  }
+  

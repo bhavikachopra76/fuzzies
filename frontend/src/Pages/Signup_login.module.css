@@ -1,0 +1,12 @@
+.container{
+    /* background-image: url('av.png');
+    background-repeat: no-repeat; */
+    background-color: beige;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

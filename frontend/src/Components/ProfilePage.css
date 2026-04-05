@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+.profile-main{
+    background-color: #CAC0B5;
+    padding: 20px;
+    height: 70.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    /* max-width: 60%; */
+    /* margin: auto; */
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #623524;
+    color: white;
+    display: flex
+;
+    justify-content: space-between;
+    width: 58%;
+    height: 85%;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px; /* Add space between the header and profile details */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    /* margin-left: 42.5vh; */
+    border-radius: 50%;
+    background-image: url('https://www.example.com/your-image.jpg');
+    background-color: #aa9b8b;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+.profile-username {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Quattrocento;
+}
+
+.profile-details {
+    display: flex
+;
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+    width: 45%;
+    justify-content: center;
+}
+
+.profile-details p {
+    font-size: 16px;
+    font-family: Courier Prime;
+}
+
+.profile-error-message {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+}
+
+.edit-button-profile {
+    padding: 10.2px 16px;
+    background-color: #996a58;
+    font-family: Courier Prime;
+}
+
+.profile-save-button {
+    padding: 10.2px 16px;
+    background-color: #996a58;
+    font-family: Courier Prime;
+}
+
+.profile-cancel-button {
+    padding: 10.2px 16px;
+    background-color: #171615;
+    font-family: Courier Prime;
+}
+
+.profile-upload-button {
+    /* border-radius: 20px; */
+    padding: 10.2px 16px;
+    background-color: #996a58;
+    font-family: Courier Prime;
+}
+
+.upload-button-profile {
+    border-radius: 2px;
+    padding: 12.2px 16px;
+    background-color: #171615;
+    font-family: Courier Prime;
+    border: none;
+    color: white;
+    /* margin-top: 5px; */
+}
+
+.MulterPhoto{
+    padding-top: 1.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-details-fontFamily{
+    font-family: Quattrocento;
+}
+
+.profile-details input {
+    padding: 2px 12px;
+    outline: none;
+}
+
+.profile-details select{
+    padding: 2px 12px;
+    outline: none;
+}
+
+

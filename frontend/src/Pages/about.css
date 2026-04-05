@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about-header{
+    background-color: #CAC0B5;
+}
+
+.about-bg{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.about-bg img{
+    width: 37%;
+}
+
+.about-text-heading{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    width: 50%;
+    font-weight: 100;
+    gap: 10px;
+}
+
+.about-text-heading h1{
+    font-family: Quattrocento;
+    font-size: 3.3vw;
+    margin-bottom: 0;
+}
+
+.about-text-heading h2{
+    font-family: Quattrocento;
+    color: #252520;
+    font-size: 2.3vw;
+}
+
+.about-text-heading h5{
+    font-family: courier prime;
+    color: #252520;
+    font-size: 1.2vw;
+}
+
+.about-section1{
+    height: 80vh;
+    background-color: #eceaeb;
+    display: flex;
+}
+
+.sec1-img-container{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.sec1-img{
+    height: 70%;
+}
+
+.about-sec1-content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec1-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: start;
+}
+
+.sec1-text h1{
+    font-family: "League Spartan", system-ui;
+    font-size: 5vw;
+}
+
+.sec1-text p{
+    font-family: "Courier Prime", monospace;
+    font-size: 16px;
+}
+
+.sec1-text img{
+    width: 80%;
+}
+
+.sec1-paw{
+    height: 30vh;
+}
+
+.about-section2{
+    height: 70vh;
+    background-color: #CAC0B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sec2-content{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FAQ{
+    width: 100%;
+}
+
+.faq-section{
+    width: 40%;
+}
+
+.about-section3{
+    height: 79vh;
+}
+
+.accordion_holder {
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    /* padding: 15px 20px; */
+  }
+  
+  .accordionItem {
+    width: 600px;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 6px;
+    border: 1.5px solid black;
+  }
+  
+  .accordionItem__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .desc {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s;
+  }
+  
+  .show {
+    margin-top: 15px;
+    grid-template-rows: 1fr;
+  }
+  
+  .hidden {
+    overflow: hidden;
+  }
+
+  .Customer-h1{
+    font-size: 30px;
+    font-family: Quattrocento;
+    text-align: center;
+    margin-top: 35px;
+  }
+
+
+  @media (max-width: 1200px) {
+    .sec1-paw{
+        position: absolute;
+    }
+    .sec1-img{
+        margin-left: 10vw;
+        z-index: 2;
+    }
+    .about-sec1-content{
+        width: 95%;
+    }
+    .about-bg img{
+        width: 40%;
+    }
+    .faq-section{
+        width: 30%;
+    }
+    .faq-p{
+        font-size: 15px;
+    }
+    .about-sec2-content{
+        width: 95%;
+    }
+    .about-sec2-text{
+        width: 60%;
+    }
+    .accordion_holder{
+        width: 100%;
+    }
+    .accordionItem{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .about-section1{
+        height: 70vh;
+    }
+    .sec1-text{
+        gap: 0;
+    }
+    .sec1-text p{
+        font-size: 17px;
+    }
+    .sec1-paw{
+        height: 25vh;
+    }
+    .about-bg img{
+        width: 45%;
+    }
+    .about-text-heading h1{
+        font-size: 3.5vw;
+    }
+    .about-text-heading h2{
+        font-size: 2.6vw;
+    }
+    .about-text-heading h5{
+        font-size: 1.5vw;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .about-section1{
+        height: 63vh;
+    }
+    .sec1-text p{
+        font-size: 15px;
+    }
+    .faq-section{
+        width: 35%;
+    }
+    .faq-p{
+        font-size: 14px;
+    }
+    .about-sec2-content{
+        width: 98%;
+    }
+    .about-sec2-text{
+        width: 60%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .about-section1{
+        height: 60vh;
+    }
+    .sec1-text p{
+        font-size: 14px;
+    }
+    .sec1-paw{
+        height: 20vh;
+    }
+    .sec1-img{
+        margin-left: 5vw;
+    }
+    .about-sec2-content{
+        flex-direction: column;
+    }
+    .about-section2{
+        height: auto;
+        padding: 2.5vh 0;
+    }
+    .about-sec2-text{
+        width: 90%;
+    }
+  }
+
+  @media (max-width: 650px){
+    .about-section1{
+        height: auto;
+    }
+    .sec1-img{
+        height: 40vh;
+    }
+    .about-sec1-content{
+        flex-direction: column;
+    }
+    .sec1-text{
+        width: 80%;
+        align-items: center;
+    }
+    .about-sec1-content {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .sec1-text p{
+        text-align: center;
+    }
+    .about-text-heading h1{
+        font-size: 4vw;
+    }
+    .about-text-heading h2{
+        font-size: 3vw;
+    }
+    .about-text-heading h5{
+        font-size: 1.8vw;
+    }
+    .sec1-paw{
+        height: 15vh;
+    }
+    .faq-p{
+        font-size: 13px;
+    }
+  }
+
+  @media (max-width: 500px){
+    .sec1-paw{
+        display: none;
+    }
+    .sec1-img{
+        height: 30vh;
+    }
+  }
+ 

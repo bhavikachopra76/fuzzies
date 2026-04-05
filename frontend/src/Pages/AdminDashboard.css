@@ -1,0 +1,165 @@
+.admin-dashboard {
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    gap: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.feedback-message {
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: #e0f7fa;
+    color: #00695c;
+    border: 1px solid #b2dfdb;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add gap between form elements */
+    width: 50%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.product-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 15px;
+}
+
+.product-form input {
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.product-form input :focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+}
+
+.submit-button {
+    padding: 8px;
+    background-color: #aa9b8b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c5b6a7;
+}
+
+.admin-product-list{
+    width: 50%;
+}
+
+.admin-product-name{
+    width: 50%;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    justify-content: flex-end;
+}
+
+.edit-button, .delete-button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color:#9a856e;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #c6aa8c;
+}
+
+.delete-button {
+    background-color: #cba2a6;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 480px) {
+    .admin-dashboard {
+        padding: 15px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=League+Spartan:wght@100..900&display=swap');
+
+
+/* Cart Card Container */
+.cart-card {
+    display: flex; /* Ensure horizontal layout */
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Space out elements */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    flex-direction: column; /* Keep elements in a horizontal line */
+    width: 50%;
+    row-gap: 10px;
+}
+
+.product-image-name h3{
+    font-family: Quattrocento;
+    font-size: 3vh;
+}
+
+.product-image-name p{
+    font-family: Courier Prime;
+    font-size: 2vh;
+}
+
+.product-image-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.cart-btns{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.cart-p{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Image Styling */
+.cart-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 16px; /* Space between image and details */
+}
+
+/* Content Styling */
+.cart-card-details {
+    flex-grow: 1; /* Take available space */
+    width: 90%;
+}
+
+.cart-card-details h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.cart-card-details p {
+    margin: 4px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Quantity Controls and Remove Button */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 16px; /* Space between quantity controls and remove button */
+}
+
+.quantity-controls button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #938372;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quantity-controls button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Remove Button */
+.remove-button {
+    padding: 10.2px 16px;
+    background-color: #938372;
+    /* font-family: Courier Prime; */
+    outline: none;
+    color: white;
+    border: none;
+}
+
+
+
