@@ -13,10 +13,14 @@
 𝙱𝚞𝚒𝚕𝚝 𝚠𝚒𝚝𝚑 𝚖𝚘𝚍𝚎𝚛𝚗 𝚠𝚎𝚋 𝚝𝚎𝚌𝚑𝚗𝚘𝚕𝚘𝚐𝚒𝚎𝚜 𝚝𝚘 𝚎𝚗𝚜𝚞𝚛𝚎 𝚊 𝚜𝚎𝚊𝚖𝚕𝚎𝚜𝚜 𝚜𝚑𝚘𝚙𝚙𝚒𝚗𝚐 𝚎𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚎 𝚏𝚘𝚛 𝚙𝚎𝚝 𝚕𝚘𝚟𝚎𝚛𝚜 ❤️.
 </p>
 
+---
+
 <h4 align="left">𝙻𝚒𝚟𝚎 𝙳𝚎𝚖𝚘 🌐</h4>
 <p align="left">
 <a href="https://fuzzies-ecommerce.vercel.app/" target="_blank">Check out the live website here!</a>
 </p>
+
+---
 
 <h4 align="left">𝚃𝚎𝚌𝚑 𝚂𝚝𝚊𝚌𝚔 💻</h4>
 <p align="left">
@@ -27,6 +31,8 @@
 <a href="https://www.javascript.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/></a>
 <a href="https://www.css3.com/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/></a>
 </p>
+
+---
 
 <h4 align="left">𝙵𝚎𝚊𝚝𝚞𝚛𝚎𝚜 ✨</h4>
 <ul>
@@ -39,6 +45,8 @@
   <li>Edit user profile and change profile picture</li>
   <li>Admin dashboard: add, edit, and remove products, manage orders and users (admin-only access)</li>
 </ul>
+
+---
 
 <h4 align="left">𝚂𝚌𝚛𝚎𝚎𝚗𝚜𝚑𝚘𝚝𝚜 / 𝚄𝙸 𝙿𝚛𝚎𝚟𝚒𝚎𝚠 📸</h4>
 <p align="center">
@@ -55,6 +63,8 @@
 <b>𝐂𝐚𝐫𝐭 𝐏𝐚𝐠𝐞 🛒</b><br>
   <img src="./README-images/cart.png" alt="Cart Page" width="600"/>
 </p>
+
+---
 
 <h4 align="left">𝙸𝚗𝚜𝚝𝚊𝚕𝚕𝚊𝚝𝚒𝚘𝚗 / 𝚁𝚞𝚗 𝙻𝚘𝚌𝚊𝚕𝚕𝚢 ⚡</h4>
 <p >
@@ -91,6 +101,8 @@ REACT_APP_API_URL=your-backend-api-url
 
 8. Open <code>http://localhost:3000</code> in your browser to view the app.
 </p>
+
+---
 
 <h4 align="left">𝙵𝚞𝚝𝚞𝚛𝚎 𝙸𝚖𝚙𝚛𝚘𝚟𝚎𝚖𝚎𝚗𝚝𝚜 🚀</h4>
 <ul>
